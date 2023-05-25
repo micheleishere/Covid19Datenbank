@@ -200,13 +200,3 @@ with st.expander("Daten löschen"):
             st.success(f"Daten vom {date} wurden gelöscht.")
 
 
-
-
-
-
-
-
-
-
-
-
