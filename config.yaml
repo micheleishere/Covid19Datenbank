@@ -1,0 +1,13 @@
+credentials:
+  usernames:
+    Michele:
+      email: samuel.wehrli@gmail.com
+      name: Samuel Wehrli
+      password: $2b$12$zQr0U89AUcnxMo5mMQx41.jcQw5u1wp.OE5et42fV5rb12JgH4CF2
+    guest:
+      name: Gast
+      password: $2b$12$muHmvGB67Cn8EvAcErljDu4hezreoOHRc0mjAIeVjHBvwqcMP4GUC
+cookie:
+  expiry_days: 30  # number of days until password is asked again
+  key: JgDyEoKUNItM5prxo194jDeLYzVzmYE6 # Must be string, use https://randomkeygen.com/
+  name: streamlitcookie
