@@ -1,3 +1,4 @@
 matplotlib
 pandas
 streamlit_authenticator
+jsonbin
