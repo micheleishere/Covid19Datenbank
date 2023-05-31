@@ -126,7 +126,7 @@ if save_button:
         "Testergebnis": test_result,
         "Testdatum": test_date
     }
-    new_entry_df = pd.DataFrame(new_entry)
+    new_entry_df = pd.DataFrame.from_dict(new_entry, orient='columns')
     df = pd.concat([df, new_entry_df], ignore_index=True)
     #df = df.append(new_entry, ignore_index=True)
     # Daten in jsonbin.io speichern
