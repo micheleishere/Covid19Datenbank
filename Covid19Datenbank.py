@@ -17,6 +17,10 @@ jsonbin_secrets = st.secrets["jsonbin"]
 api_key = jsonbin_secrets["api_key"]
 bin_id = jsonbin_secrets["bin_id"]
 
+
+# Initialisierung der SessionState-Variablen
+if 'authentication_status' not in st.session_state:
+    st.session_state.authentication_status = None
 # -------- user login --------
 with open('config.yaml') as file:
     config = yaml.load(file, Loader=SafeLoader)
