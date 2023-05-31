@@ -119,15 +119,17 @@ else:
 # Daten speichern, wenn "Speichern"-Button geklickt wird
 if save_button:
     new_entry = {
-        "Fallnummer": case_number,
-        "Name": name,
-        "Alter": age,
-        "Geschlecht": gender,
-        "Testergebnis": test_result,
-        "Testdatum": test_date
+        "Fallnummer": [case_number],
+        "Name": [name],
+        "Alter": [age],
+        "Geschlecht": [gender],
+        "Testergebnis": [test_result],
+        "Testdatum": [test_date]
     }
+
     new_entry_df = pd.DataFrame.from_dict(new_entry, orient='columns')
     df = pd.concat([df, new_entry_df], ignore_index=True)
+
     #df = df.append(new_entry, ignore_index=True)
     # Daten in jsonbin.io speichern
     save_key(api_key, bin_id, username, df.to_dict(orient="records"))
