@@ -141,7 +141,7 @@ if "Testergebnis" in df.columns:
     positive_tests = len(df[df["Testergebnis"] == "Positiv"])
 else:
     positive_tests = 0
-probability_positive = binomial_probability(positive_tests, total_tests, 0.1315)
+probability_positive = binomial_probability(positive_tests, total_tests, 0.13)
 
 # Ergebnistabelle anzeigen, nur wenn Daten vorhanden sind
 if not df.empty:
@@ -162,7 +162,7 @@ st.header("Statistik")
 st.subheader("Binomialverteilung der Testergebnisse")
 st.write(f"Anzahl der Tests insgesamt: {total_tests}")
 st.write(f"Anzahl der positiven Tests: {positive_tests}")
-st.write(f"Wahrscheinlichkeit eines positiven Tests: {probability_positive:.1315%}")
+st.write(f"Wahrscheinlichkeit eines positiven Tests: {probability_positive:.13%}")
 st.write("epidemiologischer Verlauf und verwendete Statistik: https://www.covid19.admin.ch/de/epidemiologic/test")
 
 # Plot erstellen
