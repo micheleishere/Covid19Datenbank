@@ -141,7 +141,7 @@ if "Testergebnis" in df.columns:
     positive_tests = len(df[df["Testergebnis"] == "Positiv"])
 else:
     positive_tests = 0
-probability_positive = binomial_probability(positive_tests, total_tests, 0.13)
+probability_positive = binomial_probability(positive_tests, total_tests, 0.2)
 
 # Ergebnistabelle anzeigen, nur wenn Daten vorhanden sind
 if not df.empty:
