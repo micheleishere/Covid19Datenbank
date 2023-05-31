@@ -162,7 +162,7 @@ st.header("Statistik")
 st.subheader("Binomialverteilung der Testergebnisse")
 st.write(f"Anzahl der Tests insgesamt: {total_tests}")
 st.write(f"Anzahl der positiven Tests: {positive_tests}")
-st.write(f"Wahrscheinlichkeit eines positiven Tests: {probability_positive:.13%}")
+st.write(f"Wahrscheinlichkeit eines positiven Tests: {probability_positive:.2%}")
 st.write("epidemiologischer Verlauf und verwendete Statistik: https://www.covid19.admin.ch/de/epidemiologic/test")
 
 # Plot erstellen
