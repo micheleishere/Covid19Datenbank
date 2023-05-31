@@ -122,7 +122,7 @@ if save_button:
         "Testergebnis": test_result,
         "Testdatum": test_date
     }
-    df = df.append(new_entry, ignore_index=True)
+    df = df.concat(new_entry, ignore_index=True)
     # Daten in jsonbin.io speichern
     save_key(api_key, bin_id, username, df.to_dict(orient="records"))
 
